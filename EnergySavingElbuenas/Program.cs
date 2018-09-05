@@ -19,7 +19,8 @@ namespace EnergySavingElbuenas
 
             if (DateTime.Now.DayOfWeek == DayOfWeek.Friday
                 || DateTime.Now.DayOfWeek == DayOfWeek.Saturday
-                || DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
+                || DateTime.Now.DayOfWeek == DayOfWeek.Sunday
+                || DateTime.Now.Hour  > 5)
             {
                 return;
             }
